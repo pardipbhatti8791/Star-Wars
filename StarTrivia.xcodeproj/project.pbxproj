@@ -8,20 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		068774122272203100E45029 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068774112272203100E45029 /* AppDelegate.swift */; };
-		068774142272203100E45029 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068774132272203100E45029 /* ViewController.swift */; };
+		068774142272203100E45029 /* SelectPersonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068774132272203100E45029 /* SelectPersonVC.swift */; };
 		068774172272203100E45029 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 068774152272203100E45029 /* Main.storyboard */; };
 		068774192272203200E45029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 068774182272203200E45029 /* Assets.xcassets */; };
 		0687741C2272203200E45029 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0687741A2272203200E45029 /* LaunchScreen.storyboard */; };
+		068774292272236F00E45029 /* Starjout.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 068774262272236E00E45029 /* Starjout.ttf */; };
+		0687742A2272236F00E45029 /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 068774272272236E00E45029 /* Starjedi.ttf */; };
+		0687742B2272236F00E45029 /* Starjhol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 068774282272236F00E45029 /* Starjhol.ttf */; };
+		0687742F22722F2500E45029 /* BlackBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0687742E22722F2500E45029 /* BlackBackground.swift */; };
+		0687743222722FC800E45029 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0687743122722FC800E45029 /* Constants.swift */; };
+		0687743522723A4100E45029 /* PersonApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0687743422723A4100E45029 /* PersonApi.swift */; };
+		06877437227247CA00E45029 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06877436227247CA00E45029 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0687740E2272203100E45029 /* StarTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		068774112272203100E45029 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		068774132272203100E45029 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		068774132272203100E45029 /* SelectPersonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPersonVC.swift; sourceTree = "<group>"; };
 		068774162272203100E45029 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		068774182272203200E45029 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0687741B2272203200E45029 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0687741D2272203200E45029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		068774262272236E00E45029 /* Starjout.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjout.ttf; sourceTree = "<group>"; };
+		068774272272236E00E45029 /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
+		068774282272236F00E45029 /* Starjhol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjhol.ttf; sourceTree = "<group>"; };
+		0687742E22722F2500E45029 /* BlackBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackBackground.swift; sourceTree = "<group>"; };
+		0687743122722FC800E45029 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0687743422723A4100E45029 /* PersonApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonApi.swift; sourceTree = "<group>"; };
+		06877436227247CA00E45029 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,77 @@
 		068774102272203100E45029 /* StarTrivia */ = {
 			isa = PBXGroup;
 			children = (
-				068774112272203100E45029 /* AppDelegate.swift */,
-				068774132272203100E45029 /* ViewController.swift */,
+				068774232272207200E45029 /* Model */,
+				068774242272207E00E45029 /* View */,
+				068774252272209600E45029 /* Controller */,
+				068774332272395900E45029 /* Services */,
+				0687743022722FAE00E45029 /* Utils */,
+				0687742D2272238500E45029 /* Resources */,
 				068774152272203100E45029 /* Main.storyboard */,
 				068774182272203200E45029 /* Assets.xcassets */,
 				0687741A2272203200E45029 /* LaunchScreen.storyboard */,
 				0687741D2272203200E45029 /* Info.plist */,
 			);
 			path = StarTrivia;
+			sourceTree = "<group>";
+		};
+		068774232272207200E45029 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				06877436227247CA00E45029 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		068774242272207E00E45029 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0687742E22722F2500E45029 /* BlackBackground.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		068774252272209600E45029 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				068774112272203100E45029 /* AppDelegate.swift */,
+				068774132272203100E45029 /* SelectPersonVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0687742C2272237700E45029 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				068774272272236E00E45029 /* Starjedi.ttf */,
+				068774282272236F00E45029 /* Starjhol.ttf */,
+				068774262272236E00E45029 /* Starjout.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		0687742D2272238500E45029 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0687742C2272237700E45029 /* fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0687743022722FAE00E45029 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0687743122722FC800E45029 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		068774332272395900E45029 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0687743422723A4100E45029 /* PersonApi.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,8 +199,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				068774292272236F00E45029 /* Starjout.ttf in Resources */,
+				0687742B2272236F00E45029 /* Starjhol.ttf in Resources */,
 				0687741C2272203200E45029 /* LaunchScreen.storyboard in Resources */,
 				068774192272203200E45029 /* Assets.xcassets in Resources */,
+				0687742A2272236F00E45029 /* Starjedi.ttf in Resources */,
 				068774172272203100E45029 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +215,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				068774142272203100E45029 /* ViewController.swift in Sources */,
+				06877437227247CA00E45029 /* Person.swift in Sources */,
+				068774142272203100E45029 /* SelectPersonVC.swift in Sources */,
+				0687742F22722F2500E45029 /* BlackBackground.swift in Sources */,
 				068774122272203100E45029 /* AppDelegate.swift in Sources */,
+				0687743522723A4100E45029 /* PersonApi.swift in Sources */,
+				0687743222722FC800E45029 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
