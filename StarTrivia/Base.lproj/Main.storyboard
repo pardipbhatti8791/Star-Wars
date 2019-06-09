@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PIM-P9-zwZ">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -23,26 +23,26 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="SelectPersonVC" customModule="StarTrivia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space1" translatesAutoresizingMaskIntoConstraints="NO" id="MxD-xq-kV3">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STAR TRIVIA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MSC-Ha-rL6">
-                                <rect key="frame" x="20" y="84" width="335" height="80"/>
+                                <rect key="frame" x="20" y="108" width="335" height="80"/>
                                 <fontDescription key="fontDescription" name="StarJediOutline" family="Star Jedi Outline" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OF0-29-oIs" customClass="BlackBackground" customModule="StarTrivia" customModuleProvider="target">
-                                <rect key="frame" x="20" y="229" width="335" height="209"/>
+                                <rect key="frame" x="20" y="301.66666666666669" width="335" height="209"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="w9d-Px-50p">
                                         <rect key="frame" x="20" y="20" width="295" height="169"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="xPa-aO-rw7">
-                                                <rect key="frame" x="0.0" y="0.0" width="89" height="28"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="170" height="28"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Xs-Eo-p1r">
                                                         <rect key="frame" x="0.0" y="0.0" width="56" height="28"/>
@@ -54,7 +54,10 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ya-on-0xb">
-                                                        <rect key="frame" x="70" y="0.0" width="19" height="28"/>
+                                                        <rect key="frame" x="70" y="0.0" width="100" height="28"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="hcZ-f2-idY"/>
+                                                        </constraints>
                                                         <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -65,7 +68,7 @@
                                                 <rect key="frame" x="0.0" y="29" width="107" height="27"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HEIGHT:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weC-rp-ad7">
-                                                        <rect key="frame" x="0.0" y="0.0" width="73.5" height="27"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="73.333333333333329" height="27"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="73.329999999999998" id="TUo-y1-QCq"/>
                                                         </constraints>
@@ -74,7 +77,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIg-OC-KEi">
-                                                        <rect key="frame" x="87.5" y="0.0" width="19.5" height="27"/>
+                                                        <rect key="frame" x="87.333333333333329" y="0.0" width="19.666666666666671" height="27"/>
                                                         <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -85,7 +88,7 @@
                                                 <rect key="frame" x="0.0" y="57" width="85" height="28"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MASS:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cln-hX-itW">
-                                                        <rect key="frame" x="0.0" y="0.0" width="51.5" height="28"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="51.666666666666664" height="28"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="51.670000000000002" id="bmN-Xa-BLd"/>
                                                         </constraints>
@@ -94,7 +97,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpk-io-jaD">
-                                                        <rect key="frame" x="65.5" y="0.0" width="19.5" height="28"/>
+                                                        <rect key="frame" x="65.666666666666671" y="0.0" width="19.333333333333329" height="28"/>
                                                         <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -102,7 +105,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="e8d-qF-y4n">
-                                                <rect key="frame" x="0.0" y="86" width="89" height="27"/>
+                                                <rect key="frame" x="0.0" y="86" width="170" height="27"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HAIR:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tfm-g2-fFI">
                                                         <rect key="frame" x="0.0" y="0.0" width="55" height="27"/>
@@ -114,7 +117,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0G-rY-5ox">
-                                                        <rect key="frame" x="69" y="0.0" width="20" height="27"/>
+                                                        <rect key="frame" x="69" y="0.0" width="101" height="27"/>
                                                         <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -125,7 +128,7 @@
                                                 <rect key="frame" x="0.0" y="114" width="155" height="28"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BIRTH YEAR:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ROw-pK-MOJ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="121.5" height="28"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="121.66666666666667" height="28"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="121.67" id="HeE-su-eeD"/>
                                                         </constraints>
@@ -134,7 +137,10 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hc7-LP-n3G">
-                                                        <rect key="frame" x="135.5" y="0.0" width="19.5" height="28"/>
+                                                        <rect key="frame" x="135.66666666666666" y="0.0" width="19.333333333333343" height="28"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="19.329999999999998" id="MlM-95-MXU"/>
+                                                        </constraints>
                                                         <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -145,7 +151,7 @@
                                                 <rect key="frame" x="0.0" y="143" width="113" height="26"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GENDER:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bj2-Zf-1iy">
-                                                        <rect key="frame" x="0.0" y="0.0" width="79.5" height="26"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="79.666666666666671" height="26"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="79.670000000000002" id="ChQ-Fj-sEz"/>
                                                         </constraints>
@@ -154,7 +160,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gI4-V2-Udw">
-                                                        <rect key="frame" x="93.5" y="0.0" width="19.5" height="26"/>
+                                                        <rect key="frame" x="93.666666666666657" y="0.0" width="19.333333333333329" height="26"/>
                                                         <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -186,7 +192,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfV-s0-LYL" customClass="BlackBGButton" customModule="StarTrivia" customModuleProvider="target">
-                                <rect key="frame" x="96.5" y="604" width="182" height="43"/>
+                                <rect key="frame" x="96.666666666666686" y="715" width="182" height="43"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.60150898972602729" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="182" id="4Ap-7H-XhP"/>
@@ -196,20 +202,84 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="randomTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qK2-dB-UdH"/>
+                                    <action selector="randomTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hai-5g-oYm"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m3P-gL-RhQ" customClass="BlackBackground" customModule="StarTrivia" customModuleProvider="target">
+                                <rect key="frame" x="20" y="524.66666666666663" width="335" height="75"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="MSG-Rs-8y1">
+                                        <rect key="frame" x="20" y="20" width="295" height="35"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i5K-iR-BUl" customClass="FadeEnabledBtn" customModule="StarTrivia" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="KzC-I1-EsA"/>
+                                                    <constraint firstAttribute="height" constant="35" id="rEe-r6-RFt"/>
+                                                </constraints>
+                                                <state key="normal" image="homeworld_icon"/>
+                                                <connections>
+                                                    <segue destination="P2W-BU-Axp" kind="show" identifier="toHomeWorld" id="pcN-qn-Tja"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vV-eK-7I3" customClass="FadeEnabledBtn" customModule="StarTrivia" customModuleProvider="target">
+                                                <rect key="frame" x="86.666666666666671" y="0.0" width="35" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="c0P-cj-0sQ"/>
+                                                    <constraint firstAttribute="height" constant="35" id="zdr-7B-2nG"/>
+                                                </constraints>
+                                                <state key="normal" image="vehicles"/>
+                                                <connections>
+                                                    <segue destination="kOX-Vx-Joe" kind="show" identifier="toVehicles" id="tWQ-ON-wKX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYX-mw-1jX" customClass="FadeEnabledBtn" customModule="StarTrivia" customModuleProvider="target">
+                                                <rect key="frame" x="173.33333333333334" y="0.0" width="35" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="H17-9F-jhA"/>
+                                                    <constraint firstAttribute="width" constant="35" id="vuE-6f-L4i"/>
+                                                </constraints>
+                                                <state key="normal" image="starships"/>
+                                                <connections>
+                                                    <segue destination="kmn-9l-xFI" kind="show" identifier="toStarShips" id="ag4-Ye-zhP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1V7-Z1-woC" customClass="FadeEnabledBtn" customModule="StarTrivia" customModuleProvider="target">
+                                                <rect key="frame" x="260" y="0.0" width="35" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="1pG-Pt-sgl"/>
+                                                    <constraint firstAttribute="width" constant="35" id="e2Q-Qj-dwf"/>
+                                                </constraints>
+                                                <state key="normal" image="films"/>
+                                                <connections>
+                                                    <segue destination="Sdr-sS-DIU" kind="show" identifier="toFilms" id="unZ-kW-5qN"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.6015089897" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="EbE-Bs-5AB"/>
+                                    <constraint firstAttribute="trailing" secondItem="MSG-Rs-8y1" secondAttribute="trailing" constant="20" id="bjM-vk-FMp"/>
+                                    <constraint firstItem="MSG-Rs-8y1" firstAttribute="leading" secondItem="m3P-gL-RhQ" secondAttribute="leading" constant="20" id="tXR-A8-plO"/>
+                                    <constraint firstItem="MSG-Rs-8y1" firstAttribute="centerY" secondItem="m3P-gL-RhQ" secondAttribute="centerY" id="viY-OJ-I0W"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="m3P-gL-RhQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Lx-KA-kyo"/>
                             <constraint firstItem="MSC-Ha-rL6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6ps-mI-K5Q"/>
                             <constraint firstAttribute="bottom" secondItem="MxD-xq-kV3" secondAttribute="bottom" id="7JL-n1-9hd"/>
+                            <constraint firstItem="m3P-gL-RhQ" firstAttribute="top" secondItem="OF0-29-oIs" secondAttribute="bottom" constant="14" id="7Nf-gt-XMd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MSC-Ha-rL6" secondAttribute="trailing" constant="20" id="Aff-sB-9xD"/>
                             <constraint firstItem="MxD-xq-kV3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IfE-xr-6ay"/>
                             <constraint firstAttribute="bottomMargin" secondItem="EfV-s0-LYL" secondAttribute="bottom" constant="20" id="L8n-Wf-Jy0"/>
                             <constraint firstItem="MSC-Ha-rL6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Uxj-8o-7jF"/>
                             <constraint firstItem="MxD-xq-kV3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="YPM-gf-FXv"/>
                             <constraint firstItem="EfV-s0-LYL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YmL-10-zga"/>
+                            <constraint firstItem="m3P-gL-RhQ" firstAttribute="width" secondItem="OF0-29-oIs" secondAttribute="width" id="a65-bs-Nyh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OF0-29-oIs" secondAttribute="trailing" constant="20" id="cgC-3s-7m8"/>
                             <constraint firstItem="OF0-29-oIs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="eC1-Ho-suV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MxD-xq-kV3" secondAttribute="trailing" id="q7e-d8-wrK"/>
@@ -219,17 +289,125 @@
                     </view>
                     <navigationItem key="navigationItem" id="7jC-wn-638"/>
                     <connections>
+                        <outlet property="filmsBtn" destination="1V7-Z1-woC" id="cbL-rO-bMw"/>
                         <outlet property="genderLabel" destination="gI4-V2-Udw" id="rGI-Yv-Jup"/>
                         <outlet property="hariLabel" destination="d0G-rY-5ox" id="LEe-T1-R3p"/>
                         <outlet property="heightLabel" destination="hIg-OC-KEi" id="y0u-R2-qho"/>
+                        <outlet property="homeWorldBtn" destination="i5K-iR-BUl" id="0sG-gA-RmI"/>
                         <outlet property="massLabel" destination="jpk-io-jaD" id="oLD-eX-Z9p"/>
                         <outlet property="nameLabel" destination="0Ya-on-0xb" id="Y3q-7K-Bqu"/>
+                        <outlet property="starshipsBtn" destination="bYX-mw-1jX" id="Lbg-u0-B0U"/>
+                        <outlet property="vehiclesBtn" destination="3vV-eK-7I3" id="JBR-CT-aGg"/>
                         <outlet property="yearLabel" destination="Hc7-LP-n3G" id="DCr-Iv-6AA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="733.60000000000002" y="-427.09359605911334"/>
+            <point key="canvasLocation" x="682" y="-426"/>
+        </scene>
+        <!--Home WorldVC-->
+        <scene sceneID="bZO-DR-0jb">
+            <objects>
+                <viewController id="P2W-BU-Axp" customClass="HomeWorldVC" customModule="StarTrivia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SGl-Ay-gEl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeworld" translatesAutoresizingMaskIntoConstraints="NO" id="1PJ-Aw-h01">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="1PJ-Aw-h01" secondAttribute="bottom" id="Aga-aA-imD"/>
+                            <constraint firstItem="1PJ-Aw-h01" firstAttribute="top" secondItem="SGl-Ay-gEl" secondAttribute="top" id="JuS-WV-wPl"/>
+                            <constraint firstItem="1PJ-Aw-h01" firstAttribute="leading" secondItem="bkT-NG-Tik" secondAttribute="leading" id="vOK-Oh-nkG"/>
+                            <constraint firstItem="bkT-NG-Tik" firstAttribute="trailing" secondItem="1PJ-Aw-h01" secondAttribute="trailing" id="zb1-iP-0oQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bkT-NG-Tik"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wfd-5N-HyR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2034" y="-519"/>
+        </scene>
+        <!--Star ShipsVC-->
+        <scene sceneID="aTm-JQ-TSm">
+            <objects>
+                <viewController id="kmn-9l-xFI" customClass="StarShipsVC" customModule="StarTrivia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iq6-75-vaI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space4" translatesAutoresizingMaskIntoConstraints="NO" id="hpa-9L-6d8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hpa-9L-6d8" firstAttribute="leading" secondItem="9QF-Xv-u8H" secondAttribute="leading" id="BGl-G1-Q9F"/>
+                            <constraint firstAttribute="bottom" secondItem="hpa-9L-6d8" secondAttribute="bottom" id="TgV-Os-kTC"/>
+                            <constraint firstItem="9QF-Xv-u8H" firstAttribute="trailing" secondItem="hpa-9L-6d8" secondAttribute="trailing" id="UdL-Ae-olI"/>
+                            <constraint firstItem="hpa-9L-6d8" firstAttribute="top" secondItem="iq6-75-vaI" secondAttribute="top" id="kcR-NT-dJJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9QF-Xv-u8H"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ozJ-6a-2cf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="463" y="450"/>
+        </scene>
+        <!--FilmsVC-->
+        <scene sceneID="mXr-vj-JRt">
+            <objects>
+                <viewController id="Sdr-sS-DIU" customClass="FilmsVC" customModule="StarTrivia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="drC-qn-MDD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space2" translatesAutoresizingMaskIntoConstraints="NO" id="pFN-ue-EEi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pFN-ue-EEi" firstAttribute="trailing" secondItem="hya-Bx-04h" secondAttribute="trailing" id="W5q-mq-TSm"/>
+                            <constraint firstAttribute="bottom" secondItem="pFN-ue-EEi" secondAttribute="bottom" id="Wz9-ea-PfN"/>
+                            <constraint firstItem="pFN-ue-EEi" firstAttribute="leading" secondItem="hya-Bx-04h" secondAttribute="leading" id="oMb-y7-QBk"/>
+                            <constraint firstItem="pFN-ue-EEi" firstAttribute="top" secondItem="drC-qn-MDD" secondAttribute="top" id="qdb-fR-jnw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hya-Bx-04h"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CJP-wO-7k2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1548" y="378"/>
+        </scene>
+        <!--VehiclesVC-->
+        <scene sceneID="FJK-KS-9QN">
+            <objects>
+                <viewController id="kOX-Vx-Joe" customClass="VehiclesVC" customModule="StarTrivia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RxL-8P-w5f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space3" translatesAutoresizingMaskIntoConstraints="NO" id="YEF-45-BMe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YEF-45-BMe" firstAttribute="top" secondItem="RxL-8P-w5f" secondAttribute="top" id="0Ad-80-ebN"/>
+                            <constraint firstItem="YEF-45-BMe" firstAttribute="leading" secondItem="qTO-c6-Fwd" secondAttribute="leading" id="LSm-mI-u6f"/>
+                            <constraint firstItem="qTO-c6-Fwd" firstAttribute="trailing" secondItem="YEF-45-BMe" secondAttribute="trailing" id="mc5-4G-MJX"/>
+                            <constraint firstAttribute="bottom" secondItem="YEF-45-BMe" secondAttribute="bottom" id="vOO-Tj-GnD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qTO-c6-Fwd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OWX-Ou-m9h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2711" y="78"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MHo-rk-dkk">
@@ -237,7 +415,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PIM-P9-zwZ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Mr0-dk-vWp">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -247,10 +425,18 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tWr-rN-FQ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-62" y="-385"/>
+            <point key="canvasLocation" x="-151" y="-426"/>
         </scene>
     </scenes>
     <resources>
+        <image name="films" width="50" height="50"/>
+        <image name="homeworld" width="460" height="864"/>
+        <image name="homeworld_icon" width="50" height="50"/>
         <image name="space1" width="699" height="1120"/>
+        <image name="space2" width="329" height="610"/>
+        <image name="space3" width="470" height="877"/>
+        <image name="space4" width="278" height="488"/>
+        <image name="starships" width="50" height="50"/>
+        <image name="vehicles" width="50" height="50"/>
     </resources>
 </document>
