@@ -21,6 +21,8 @@ class SelectPersonVC: UIViewController {
     @IBOutlet weak var vehiclesBtn: UIButton!
     @IBOutlet weak var starshipsBtn: UIButton!
     @IBOutlet weak var filmsBtn: UIButton!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
+    @IBOutlet weak var randomButton: BlackBGButton!
     
     
     var personApi = PersonApi()
@@ -28,12 +30,22 @@ class SelectPersonVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        spinner.isHidden = true
     }
     
     @IBAction func randomTapped(_ sender: Any) {
+        
+        spinner.isHidden = false
+        spinner.startAnimating()
+        randomButton.isEnabled = false
+        
         let random = Int.random(in: 1 ... 87)
         personApi.getRandomPersonAlamoFireAndCodeable(id: random) { (person) in
+            
+            self.spinner.stopAnimating()
+            self.spinner.isHidden = true
+            self.randomButton.isEnabled = true
+            
             if let person = person {
                 self.setupView(person: person)
                 self.person = person
@@ -62,34 +74,8 @@ class SelectPersonVC: UIViewController {
             destination.person = person
         }
         
-//        switch segue.identifier {
-//        case Segue.homeWorld.rawValue:
-//            if let destination = segue.destination as? HomeWorldVC {
-//                destination.person = person
-//            }
-//        case Segue.vehicles.rawValue:
-//            if let destination = segue.destination as? VehiclesVC {
-//                destination.person = person
-//            }
-//        case Segue.starships.rawValue:
-//            if let destination = segue.destination as? StarShipsVC {
-//                destination.person = person
-//            }
-//        case Segue.films.rawValue:
-//            if let destination = segue.destination as? FilmsVC {
-//                destination.person = person
-//            }
-//        default:
-//            break
-//        }
     }
     
-//    enum Segue: String {
-//        case homeWorld = "toHomeWorld"
-//        case starships = "toStarShips"
-//        case vehicles = "toVehicles"
-//        case films = "toFilms"
-//    }
 }
 
 protocol PersonProtocol {
