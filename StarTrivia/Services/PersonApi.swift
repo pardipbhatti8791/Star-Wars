@@ -12,6 +12,32 @@ import Alamofire
 class PersonApi {
     
     // Web request with alamofire
+    func getRandomPersonAlamoFireAndCodeable(id: Int, completion: @escaping PersonResponseCompletion) {
+        
+        guard let url = URL(string: "\(PERSON_URL)\(id)") else { return }
+        Alamofire.request(url).responseJSON { (response) in
+            if let error = response.result.error {
+                debugPrint(error.localizedDescription)
+                completion(nil)
+                return
+            }
+            
+            guard let data = response.data else { return completion(nil)
+            }
+            
+            let jsonDecoder = JSONDecoder()
+            do {
+                let person = try jsonDecoder.decode(Person.self, from: data)
+                completion(person)
+            } catch {
+                debugPrint(error.localizedDescription)
+                completion(nil)
+            }
+            
+        }
+    }
+    
+    // Web request with alamofire
     func getRandomPersonAlamoFire(id: Int, completion: @escaping PersonResponseCompletion) {
         
         guard let url = URL(string: "\(PERSON_URL)\(id)") else { return }
@@ -40,9 +66,9 @@ class PersonApi {
                 completion(nil)
                 return
             }
-
+            
             guard let data = data else { return }
-
+            
             do {
                 let jsonAny = try JSONSerialization.jsonObject(with: data, options: [])
                 guard let json = jsonAny as? [String: Any] else { return }
@@ -50,13 +76,13 @@ class PersonApi {
                 DispatchQueue.main.async {
                     completion(person)
                 }
-
+                
             } catch {
                 debugPrint(error.localizedDescription)
                 return
             }
         }
-
+        
         task.resume()
     }
     
@@ -75,3 +101,5 @@ class PersonApi {
         return Person(name: name, height: height, mass: mass, hair: hair, birthYear: birthYear, gender: gender, homeworldUrl: homeWorldUrl, filmUrls: filmUrls, vehicleUrls: vehicleUrls, starShipUrls: starshipUrls)
     }
 }
+
+

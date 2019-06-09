@@ -28,9 +28,8 @@ class SelectPersonVC: UIViewController {
 
     @IBAction func randomTapped(_ sender: Any) {
         let random = Int.random(in: 1 ... 87)
-        personApi.getRandomPersonAlamoFire(id: random) { (person) in
+        personApi.getRandomPersonAlamoFireAndCodeable(id: random) { (person) in
             if let person = person {
-                print(person.name)
                 self.nameLabel.text = person.name
                 self.heightLabel.text = person.height
                 self.massLabel.text = person.mass
